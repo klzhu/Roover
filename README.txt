@@ -6,7 +6,7 @@ java -jar periscopechallenge.jar input.txt
 
 input.txt is not hard coded into the program, so you can change the argument you pass in.
 
-Decision Choices:
+Design Choices:
 I originally coded this project by using an actual game board. However, because we only need 
 to make sure the roover is moving within the board and track the roover position and how many
 dirt patches it has cleaned up, I decided to forgo the board and just use a hashset to store 

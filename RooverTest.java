@@ -37,8 +37,8 @@ public class RooverTest {
         r = new Roover("input.txt");
         Assert.assertNotNull(r);
         r.runRoover();
-        assertEquals(Integer.toString(r.getFinalXPos()), "1");
-        assertEquals(Integer.toString(r.getFinalYPos()), "3");
+        assertEquals(Integer.toString(r.getCurrXPos()), "1");
+        assertEquals(Integer.toString(r.geCurrYPos()), "3");
         assertEquals(Integer.toString(r.getNumPatchesCleaned()), "1");
     }
     
@@ -71,8 +71,8 @@ public class RooverTest {
         r = new Roover("noDirtInput.txt");
         Assert.assertNotNull(r);
         r.runRoover();
-        assertEquals(Integer.toString(r.getFinalXPos()), "1");
-        assertEquals(Integer.toString(r.getFinalYPos()), "3");
+        assertEquals(Integer.toString(r.getCurrXPos()), "1");
+        assertEquals(Integer.toString(r.geCurrYPos()), "3");
         assertEquals(Integer.toString(r.getNumPatchesCleaned()), "0");
     }
     
@@ -81,8 +81,8 @@ public class RooverTest {
         r = new Roover("invalidDrivingInstr.txt");
         Assert.assertNotNull(r);
         r.runRoover();
-        assertEquals(Integer.toString(r.getFinalXPos()), "1");
-        assertEquals(Integer.toString(r.getFinalYPos()), "3");
+        assertEquals(Integer.toString(r.getCurrXPos()), "1");
+        assertEquals(Integer.toString(r.geCurrYPos()), "3");
         assertEquals(Integer.toString(r.getNumPatchesCleaned()), "1");
         assertEquals("Invalid driving instruction, please enter N, S, W, or E only.", errContent.toString().trim());
     }
